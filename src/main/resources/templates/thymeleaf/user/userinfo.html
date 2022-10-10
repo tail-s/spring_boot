@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>SampleController1</title>
+</head>
+<body>
+
+	<h1>userinfo.html</h1>
+	<h1 th:text="'안녕하세요' + ${ username } + '입니다~'">안녕하세요~ 홍길동입니다~</h1>
+	<h1 th:text="${userid}">유저 아이디</h1>
+	
+</body>
+</html>
