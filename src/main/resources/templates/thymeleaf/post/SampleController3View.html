@@ -2,9 +2,18 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>View</title>
 </head>
 <body>
-
+	<h1 th:text="${ heading }">스프링부트 객체 전달</h1>
+	
+	<h1 th:text="${ userName }">유저네임</h1>
+	<h1 th:text="${ userId }">유저아이디</h1>
+	<h1 th:text="${ userPhone }">유저폰</h1>
+	
+	<h1 th:text="${ userDTO.getUserName() }"></h1>
+	<h1 th:text="${ userDTO.getUserId() }"></h1>
+	<h1 th:text="${ userDTO.getUserPhone() }"></h1>
+	
 </body>
 </html>
